@@ -2,15 +2,19 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section>
+    <section id ="home">
+      
       <h1>Preserving Our Heritage</h1>
+    
 
       <p>
         Explore historical monuments, cultural traditions, and stories that
         connect us to our past.
       </p>
 
+      <a href="#Features">   
       <button>Explore Heritage</button>
+      </a>
     </section>
   );
 }

@@ -1,0 +1,22 @@
+#about {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 60px 40px;
+    background: rgb(158, 95, 13);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#about h2 {
+    color: #f3efed;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f7f4f1;
+    margin-bottom: 20px;
+}
