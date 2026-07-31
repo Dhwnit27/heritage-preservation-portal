@@ -5,17 +5,14 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Features from "./components/Features";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-
-      <div>
-        <h1>Heritage Preservation Portal</h1>
-        <p>Preserving history for future generations.</p>
-      </div>
+      <Features />
     </>
   );
 }
