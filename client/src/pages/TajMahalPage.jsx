@@ -1,5 +1,8 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import "./TajMahalPage.css";
+
+import tajMahal from "../assets/images/TajMahal.jpg";
 
 function TajMahalPage() {
     return (
@@ -8,13 +11,77 @@ function TajMahalPage() {
 
             <main className="taj-page">
 
-                <h1>🏛 Taj Mahal</h1>
+    <section className="taj-hero">
 
-                <p>
-                    One of the Seven Wonders of the World.
-                </p>
+        <h1>🏛 Taj Mahal</h1>
 
-            </main>
+        <img
+            src={tajMahal}
+            alt="Taj Mahal"
+            className="taj-image"
+        />
+
+
+
+        <p className="taj-location">
+            📍 Agra, Uttar Pradesh, India
+        </p>
+
+        <p className="taj-intro">
+            One of the Seven Wonders of the World and one of the finest examples
+            of Mughal architecture ever built.
+        </p>
+
+    </section>
+
+        <section className="taj-story">
+
+    <h2>The Story</h2>
+
+    <p>
+        The Taj Mahal was built by the Mughal emperor Shah Jahan
+        in memory of his beloved wife Mumtaz Mahal.
+        Construction began in 1632 and took more than 20 years
+        to complete.
+    </p>
+
+</section>
+
+        <section className="taj-facts">
+
+    <h2>Quick Facts</h2>
+
+    <ul>
+
+        <li>📅 Built: 1632–1653</li>
+
+        <li>👑 Built By: Shah Jahan</li>
+
+        <li>❤️ Dedicated To: Mumtaz Mahal</li>
+
+        <li>🌍 UNESCO World Heritage Site</li>
+
+    </ul>
+
+</section>
+
+<section className="taj-funfact">
+
+    <h2>💡 Did You Know?</h2>
+
+    <div className="fact-box">
+
+        <p>
+            The Taj Mahal changes its color throughout the day.
+            It appears pink in the morning, dazzling white during the day,
+            golden at sunset, and silver under the moonlight.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
 
             <Footer />
         </>

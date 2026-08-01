@@ -1,0 +1,166 @@
+/* =========================
+   Taj Mahal Page
+========================= */
+
+.taj-page{
+    padding:60px 8%;
+    background:#fdf9f3;
+}
+
+/* =========================
+   Hero Section
+========================= */
+
+.taj-hero{
+    max-width:1000px;
+    margin:0 auto 80px;
+    text-align:center;
+}
+
+.taj-hero h1{
+    font-size:3rem;
+    color:#4d2e1f;
+    margin-bottom:15px;
+}
+
+.taj-image{
+    width:100%;
+    max-width:700px;
+    height:420px;
+    object-fit:cover;
+    display:block;
+    margin:30px auto;
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.taj-location{
+    font-size:1.1rem;
+    color:#8b5e3c;
+    margin-bottom:20px;
+}
+
+.taj-intro{
+    max-width:700px;
+    margin:0 auto;
+    font-size:1.15rem;
+    line-height:1.8;
+    color:#555;
+}
+
+/* =========================
+   Story Section
+========================= */
+
+.taj-story{
+    max-width:900px;
+    margin:0 auto 70px;
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.taj-story h2{
+    font-size:2rem;
+    color:#4d2e1f;
+    margin-bottom:20px;
+}
+
+.taj-story p{
+    font-size:1.05rem;
+    line-height:1.9;
+    color:#555;
+}
+
+/* =========================
+   Facts Section
+========================= */
+
+.taj-facts{
+    max-width:900px;
+    margin:0 auto 80px;
+}
+
+.taj-facts h2{
+    font-size:2rem;
+    color:#4d2e1f;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.taj-facts ul{
+    list-style:none;
+    padding:0;
+}
+
+.taj-facts li{
+    background:white;
+    padding:18px 24px;
+    margin-bottom:15px;
+    border-radius:12px;
+    font-size:1.05rem;
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.taj-facts li:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width:768px){
+
+    .taj-page{
+        padding:40px 20px;
+    }
+
+    .taj-hero h1{
+        font-size:2.2rem;
+    }
+
+    .taj-image{
+        height:280px;
+    }
+
+    .taj-story{
+        padding:25px;
+    }
+
+    .taj-story h2,
+    .taj-facts h2{
+        font-size:1.6rem;
+    }
+}
+
+/* =========================
+   Did You Know
+========================= */
+
+.taj-funfact{
+    max-width:900px;
+    margin:0 auto 80px;
+}
+
+.taj-funfact h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#4d2e1f;
+}
+
+.fact-box{
+    background:#fff8e8;
+    border-left:8px solid #c58b39;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.fact-box p{
+    font-size:1.1rem;
+    line-height:1.8;
+}
