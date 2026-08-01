@@ -1,4 +1,7 @@
+import {useState} from "react";
+
 function FeatureCard(props) {
+  const [isFavorite, setIsFavorite] = useState(false);
   return (
     <div className="feature-card">
       <img src={props.image} alt={props.title} />
@@ -7,7 +10,11 @@ function FeatureCard(props) {
 
       <p>{props.description}</p>
 
-      <button>Explore</button>
+      <button
+  onClick={() => setIsFavorite(!isFavorite)}
+>
+  {isFavorite ? "❤️ Favorited" : "🤍 Add to Favorites"}
+</button>
     </div>
   );
 }
