@@ -7,6 +7,7 @@ import './App.css'
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
+import ExplorePage from "./pages/ExplorePage";
 
 import Features from "./components/Features";
 import About from "./components/About";
@@ -18,6 +19,7 @@ function App() {
    <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/about" element={<AboutPage />} />
+  <Route path="/explore" element={<ExplorePage />} />
 </Routes>
   );
 }

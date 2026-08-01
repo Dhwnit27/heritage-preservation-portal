@@ -1,0 +1,51 @@
+.journey-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+
+    gap: 30px;
+
+    margin-top: 60px;
+}
+
+.journey-card{
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+
+    transition: .3s;
+}
+
+.journey-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+
+.journey-content h2{
+
+    margin-bottom:20px;
+}
+
+.journey-content p{
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+}
+
+.journey-content a{
+
+    text-decoration:none;
+
+    color:#9e5320;
+
+    font-weight:bold;
+}
