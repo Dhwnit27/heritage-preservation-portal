@@ -2,3 +2,140 @@ html {
   scroll-behavior: smooth;
 }
 @import "tailwindcss";
+
+/* =========================
+   Global Card
+========================= */
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.15);
+
+}
+/* ==========================================
+   Global Layout
+========================================== */
+
+.page{
+
+    padding:60px 8%;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================
+   Global Card
+========================================== */
+
+.card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:all .3s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================
+   Global Section Title
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    font-size:2.2rem;
+
+    color:#4d2e1f;
+
+    margin-bottom:40px;
+
+    position:relative;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    width:90px;
+
+    height:4px;
+
+    background:#b8860b;
+
+    display:block;
+
+    margin:12px auto 0;
+
+    border-radius:20px;
+
+}
+
+/* ==========================================
+   Global Container
+========================================== */
+
+.container{
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+}
+
+/* ==========================================
+   Global Button
+========================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    background:#8b5e3c;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#6e462a;
+
+    transform:translateY(-2px);
+
+}

@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import "./TajMahalPage.css";
 
 import tajMahal from "../assets/images/TajMahal.jpg";
-import tajMahal1 from "../assets/images/TajMahal-1.1.jpg";
+// import tajMahal1 from "../assets/images/TajMahal-1.1.jpg";
 import tajMahal2 from "../assets/images/TajMahal-1.2.jpg";
 
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ function TajMahalPage() {
         <>
             <Navbar />
 
-            <main className="taj-page">
+            <main className="taj-page page">
 
         <Link to="/india" className="back-btn">
     ← Back to India
@@ -44,15 +44,45 @@ function TajMahalPage() {
 
     <section className="taj-gallery">
 
-    <h2> Explore The Monument</h2>
+    <h2 className="section-title">Photo Gallery</h2>
 
-    <div className="gallery-grid">
+   <div className="gallery-item">
+    <img src={tajMahal} alt="Taj Mahal" />
+    <p>Primeum View</p>
+</div>
 
-        <img src={tajMahal} alt="Taj Mahal" />
+{/* <div className="gallery-item">
+    <img src={tajMahal1} alt="Taj Mahal View" />
+    <p>Front Architecture</p>
+</div> */}
 
-        <img src={tajMahal1} alt="Taj Mahal View" />
+<div className="gallery-item">
+    <img src={tajMahal2} alt="Taj Mahal Garden" />
+    <p>Beautiful View From Main entrance</p>
+</div>
 
-        <img src={tajMahal2} alt="Taj Mahal Garden" />
+</section>
+
+<section className="visit-info">
+
+    <h2>🧳 Plan Your Visit</h2>
+
+    <div className="visit-grid">
+
+        <div className="visit-card card">
+            <h3>🕒 Timings</h3>
+            <p>6:00 AM – 6:30 PM</p>
+        </div>
+
+        <div className="visit-card card">
+            <h3>🎫 Entry Ticket</h3>
+            <p>Available at the official ticket counter.</p>
+        </div>
+
+        <div className="visit-card card">
+            <h3>📍 Location</h3>
+            <p>Agra, Uttar Pradesh, India</p>
+        </div>
 
     </div>
 
