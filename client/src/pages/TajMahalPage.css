@@ -164,3 +164,111 @@
     font-size:1.1rem;
     line-height:1.8;
 }
+
+.back-btn{
+
+    display:inline-block;
+
+    margin-bottom:30px;
+
+    text-decoration:none;
+
+    color:#4d2e1f;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    color:#9e5320;
+
+    transform:translateX(-5px);
+
+}
+
+/* =========================
+   Gallery
+========================= */
+
+.taj-gallery{
+
+    max-width:1000px;
+
+    margin:80px auto;
+}
+
+.taj-gallery h2{
+
+    text-align:center;
+
+    font-size:2.3rem;
+
+    font-weight:700;
+
+    color:#4d2e1f;
+
+    letter-spacing:1px;
+
+    margin-bottom:12px;
+
+    position:relative;
+
+    display:inline-block;
+
+    /* left:40%; */
+
+    transform:translateX(-50%);
+}
+
+.taj-gallery h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    background:#b8860b;
+
+    margin:12px auto 0;
+
+    border-radius:20px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.03);
+
+}

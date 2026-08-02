@@ -3,6 +3,10 @@ import Footer from "../components/Footer";
 import "./TajMahalPage.css";
 
 import tajMahal from "../assets/images/TajMahal.jpg";
+import tajMahal1 from "../assets/images/TajMahal-1.1.jpg";
+import tajMahal2 from "../assets/images/TajMahal-1.2.jpg";
+
+import { Link } from "react-router-dom";
 
 function TajMahalPage() {
     return (
@@ -10,6 +14,10 @@ function TajMahalPage() {
             <Navbar />
 
             <main className="taj-page">
+
+        <Link to="/india" className="back-btn">
+    ← Back to India
+</Link>
 
     <section className="taj-hero">
 
@@ -33,6 +41,22 @@ function TajMahalPage() {
         </p>
 
     </section>
+
+    <section className="taj-gallery">
+
+    <h2> Explore The Monument</h2>
+
+    <div className="gallery-grid">
+
+        <img src={tajMahal} alt="Taj Mahal" />
+
+        <img src={tajMahal1} alt="Taj Mahal View" />
+
+        <img src={tajMahal2} alt="Taj Mahal Garden" />
+
+    </div>
+
+</section>
 
         <section className="taj-story">
 
