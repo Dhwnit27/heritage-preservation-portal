@@ -8,7 +8,7 @@ function MonumentPage() {
     <>
       <Navbar />
 
-      <main className="monument-page">
+      <main className="monument-page page">
 
     <h1>🏛 Monument Gallery</h1>
 
@@ -18,23 +18,23 @@ function MonumentPage() {
 
     <section className="continent-grid">
 
-       <Link to="/asia" className="continent-card">
-
+    <Link to="/asia" className="continent-card card">
     <h2>🌏 Asia</h2>
 
-</Link>
+    </Link>
 
-        <div className="continent-card">
-            <h2>🌍 Europe</h2>
-        </div>
+    <Link to="/europe" className="continent-card card">
+        <h2>🌏 Europe</h2>
+    </Link>
+ 
+    <Link to="/north-america" className="continent-card card">
+        <h2>🌎 North America</h2>
+     </Link>
 
-        <div className="continent-card">
-            <h2>🌎 America</h2>
-        </div>
+    <Link to="/south-america" className="continent-card card">
+        <h2>🌎 South America</h2>
+    </Link>
 
-        <div className="continent-card">
-            <h2>🌍 Africa</h2>
-        </div>
 
     </section>
 

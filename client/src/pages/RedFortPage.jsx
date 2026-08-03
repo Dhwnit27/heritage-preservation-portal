@@ -3,17 +3,18 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 import "../styles/MonumentPage.css";
-import "./TajMahalPage.css";
+import "./RedFortPage.css";
 
-import tajMahal from "../assets/images/TajMahal.jpg";
-import tajMahal2 from "../assets/images/TajMahal-1.2.jpg";
+import redFort1 from "../assets/images/Red-Fort-1.jpg";
+import redFort2 from "../assets/images/Red-Fort-2.jpg";
+import redFort3 from "../assets/images/Red-Fort-3.jpg";
 
-function TajMahalPage() {
+function RedFortPage() {
   return (
     <>
       <Navbar />
 
-      <main className="page taj-page">
+      <main className="page redfort-page">
 
         <Link to="/india" className="back-btn">
           ← Back to India
@@ -23,23 +24,23 @@ function TajMahalPage() {
         <section className="monument-hero">
 
           <h1 className="monument-title">
-            🏛 Taj Mahal
+            🏰 Red Fort
           </h1>
 
           <img
-            src={tajMahal}
-            alt="Taj Mahal"
+            src={redFort1}
+            alt="Red Fort"
             className="monument-image"
           />
 
           <p className="monument-location">
-            📍 Agra, Uttar Pradesh, India
+            📍 Delhi, India
           </p>
 
-          <p className="taj-intro">
-            One of the Seven Wonders of the World and one of the finest
-            examples of Mughal architecture ever built. It was constructed
-            by Emperor Shah Jahan as a symbol of eternal love.
+          <p className="redfort-intro">
+            The Red Fort is one of India's most iconic historical landmarks,
+            built by Mughal Emperor Shah Jahan and recognized as a UNESCO
+            World Heritage Site.
           </p>
 
         </section>
@@ -50,11 +51,11 @@ function TajMahalPage() {
           <h2>The Story</h2>
 
           <p>
-            The Taj Mahal was commissioned by Mughal Emperor Shah Jahan
-            in memory of his beloved wife Mumtaz Mahal. Construction began
-            in 1632 and took over twenty years to complete. Today it is one
-            of the world's most admired architectural masterpieces and a
-            UNESCO World Heritage Site.
+            The Red Fort was commissioned by Mughal Emperor Shah Jahan in
+            1638 after shifting the Mughal capital from Agra to Delhi.
+            Constructed using magnificent red sandstone, it served as the
+            residence of Mughal emperors for nearly 200 years and remains one
+            of India's greatest symbols of history and architecture.
           </p>
 
         </section>
@@ -68,7 +69,7 @@ function TajMahalPage() {
 
             <div className="fact-card card">
               <h3>📅 Built</h3>
-              <p>1632–1653</p>
+              <p>1638–1648</p>
             </div>
 
             <div className="fact-card card">
@@ -77,8 +78,8 @@ function TajMahalPage() {
             </div>
 
             <div className="fact-card card">
-              <h3>❤️ Dedicated To</h3>
-              <p>Mumtaz Mahal</p>
+              <h3>📍 Location</h3>
+              <p>Delhi, India</p>
             </div>
 
             <div className="fact-card card">
@@ -93,18 +94,23 @@ function TajMahalPage() {
         {/* Gallery */}
         <section className="monument-section">
 
-          <h2>🖼 Photo Gallery</h2>
+          <h2>🖼 Gallery</h2>
 
           <div className="gallery-grid">
 
             <img
-              src={tajMahal}
-              alt="Taj Mahal Main View"
+              src={redFort1}
+              alt="Red Fort Main View"
             />
 
             <img
-              src={tajMahal2}
-              alt="Taj Mahal Entrance View"
+              src={redFort2}
+              alt="Red Fort Interior"
+            />
+
+            <img
+              src={redFort3}
+              alt="Red Fort Architecture"
             />
 
           </div>
@@ -117,14 +123,14 @@ function TajMahalPage() {
           <h2>💡 Did You Know?</h2>
 
           <p>
-            The Taj Mahal appears to change color throughout the day.
-            It looks pink during sunrise, brilliant white in daylight,
-            golden at sunset, and silver under the moonlight.
+            Every year on India's Independence Day (15 August), the Prime
+            Minister hoists the national flag at the Red Fort and addresses
+            the nation from its historic ramparts.
           </p>
 
         </section>
 
-        {/* Visit Information */}
+        {/* Visit */}
         <section className="monument-section">
 
           <h2>🧳 Plan Your Visit</h2>
@@ -133,17 +139,17 @@ function TajMahalPage() {
 
             <div className="visit-card card">
               <h3>🕒 Timings</h3>
-              <p>6:00 AM – 6:30 PM</p>
+              <p>9:30 AM – 4:30 PM</p>
             </div>
 
             <div className="visit-card card">
-              <h3>🎟 Entry Ticket</h3>
-              <p>Available online and at the official ticket counter.</p>
+              <h3>🎟 Entry</h3>
+              <p>Tickets available online and at the entrance.</p>
             </div>
 
             <div className="visit-card card">
-              <h3>📍 Location</h3>
-              <p>Agra, Uttar Pradesh, India</p>
+              <h3>📍 Best Season</h3>
+              <p>October – March</p>
             </div>
 
           </div>
@@ -153,12 +159,12 @@ function TajMahalPage() {
         {/* Navigation */}
         <section className="monument-navigation">
 
-          <Link to="#" className="nav-btn">
-            ⬅ Previous
+          <Link to="/taj-mahal" className="nav-btn">
+            ⬅ Taj Mahal
           </Link>
 
-          <Link to="/red-fort" className="nav-btn">
-            Red Fort ➡
+          <Link to="#" className="nav-btn">
+            Konark ➡
           </Link>
 
         </section>
@@ -170,4 +176,4 @@ function TajMahalPage() {
   );
 }
 
-export default TajMahalPage;
+export default RedFortPage;

@@ -1,43 +1,43 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "./IndiaPage.css";
-
 import { Link } from "react-router-dom";
+
+import "./IndiaPage.css";
 
 function IndiaPage() {
   return (
     <>
       <Navbar />
 
-      <main className="india-page">
+      <main className="india-page page">
 
-    <h1>🇮🇳 India</h1>
+        <h1>🇮🇳 India</h1>
 
-    <p>
-        Choose a monument to begin exploring.
-    </p>
+        <p className="india-subtitle">
+          Choose a monument to begin exploring.
+        </p>
 
-    <section className="monument-grid">
+        <section className="monument-grid">
 
-        <Link to="/taj-mahal" className="monument-card">
-    🏛 Taj Mahal
-</Link>
+          <Link to="/taj-mahal" className="monument-card card">
+            🏛 Taj Mahal
+          </Link>
 
-        <div className="monument-card">
-            🏛 Red Fort
-        </div>
+          <Link to="/red-fort" className="monument-card card">
+            🏰 Red Fort
+          </Link>
 
-        <div className="monument-card">
-            🏛 Konark Sun Temple
-        </div>
+          <Link to="#" className="monument-card card">
+            ☀️ Konark Sun Temple
+          </Link>
 
-        <div className="monument-card">
-            🏛 Hampi
-        </div>
+          <Link to="#" className="monument-card card">
+            🪨 Hampi
+          </Link>
 
-    </section>
+        </section>
 
-</main>
+      </main>
 
       <Footer />
     </>

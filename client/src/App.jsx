@@ -12,6 +12,7 @@ import MonumentPage from "./pages/MonumentPage";
 import AsiaPage from "./pages/AsiaPage";
 import IndiaPage from "./pages/IndiaPage";
 import TajMahalPage from "./pages/TajMahalPage";
+import RedFortPage from "./pages/RedFortPage";
 
 import Features from "./components/Features";
 import About from "./components/About";
@@ -28,6 +29,7 @@ function App() {
   <Route path="/asia" element={<AsiaPage />} />
   <Route path="/india" element={<IndiaPage />} />
   <Route path="/taj-mahal" element={<TajMahalPage />} />
+  <Route path="/red-fort" element={<RedFortPage />} />
 </Routes>
   );
 }
