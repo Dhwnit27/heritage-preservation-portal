@@ -31,9 +31,9 @@ function IndiaPage() {
     ☀️ Konark Sun Temple
             </Link>
 
-          <Link to="/hampi" className="monument-card card">
-            🪨 Hampi
-          </Link>
+         <Link to="/hampi" className="monument-card card">
+  🪨 Hampi
+</Link>
 
         </section>
 

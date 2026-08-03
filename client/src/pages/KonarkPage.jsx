@@ -164,7 +164,7 @@ function KonarkPage() {
             ⬅ Red Fort
           </Link>
 
-          <Link to="#" className="nav-btn">
+          <Link to="/hampi" className="nav-btn">
             Hampi ➡
           </Link>
 
