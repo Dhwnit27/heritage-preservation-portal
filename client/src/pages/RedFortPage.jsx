@@ -163,7 +163,7 @@ function RedFortPage() {
             ⬅ Taj Mahal
           </Link>
 
-          <Link to="#" className="nav-btn">
+          <Link to="/Konark" className="nav-btn">
             Konark ➡
           </Link>
 
