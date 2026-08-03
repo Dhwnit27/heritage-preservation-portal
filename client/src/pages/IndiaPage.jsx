@@ -27,11 +27,11 @@ function IndiaPage() {
             🏰 Red Fort
           </Link>
 
-          <Link to="#" className="monument-card card">
-            ☀️ Konark Sun Temple
-          </Link>
+          <Link to="/konark" className="monument-card card">
+    ☀️ Konark Sun Temple
+            </Link>
 
-          <Link to="#" className="monument-card card">
+          <Link to="/hampi" className="monument-card card">
             🪨 Hampi
           </Link>
 
