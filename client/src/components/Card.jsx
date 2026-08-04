@@ -1,8 +1,10 @@
-function Card({ className = "", children }) {
+import { Link } from "react-router-dom";
+
+function Card({ to, className = "", children }) {
   return (
-    <div className={`card ${className}`}>
+    <Link to={to} className={`card ${className}`}>
       {children}
-    </div>
+    </Link>
   );
 }
 
