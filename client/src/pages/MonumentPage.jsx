@@ -1,47 +1,58 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Card from "../components/Card";
 import { Link } from "react-router-dom";
+
 import "./MonumentPage.css";
 
 function MonumentPage() {
-  return (
-    <>
-      <Navbar />
+    return (
+        <>
+            <Navbar />
 
-      <main className="monument-page page">
+            <main className="monument-page page">
 
-    <h1>🏛 Monument Gallery</h1>
+                <section className="monument-hero">
 
-    <p>
-        Choose a continent to begin exploring its famous monuments.
-    </p>
+<h1>🏛 Monument Gallery</h1>
 
-    <section className="continent-grid">
+<p>
+    Step into India's rich architectural heritage and explore
+    iconic monuments through beautifully curated exhibition
+    rooms. Each monument preserves a unique story, remarkable
+    craftsmanship, and a timeless legacy waiting to be discovered.
+</p>
 
-    <Link to="/asia" className="continent-card card">
-    <h2>🌏 Asia</h2>
+                </section>
 
-    </Link>
+                <section className="country-grid">
 
-    <Link to="/europe" className="continent-card card">
-        <h2>🌏 Europe</h2>
-    </Link>
- 
-    <Link to="/north-america" className="continent-card card">
-        <h2>🌎 North America</h2>
-     </Link>
+                    <Card
+                        to="/india"
+                        className="country-card"
+                    >
 
-    <Link to="/south-america" className="continent-card card">
-        <h2>🌎 South America</h2>
-    </Link>
+                        <h2>🇮🇳 India</h2>
 
+                        <p>
+                            Explore UNESCO World Heritage Sites,
+                            magnificent forts, temples and timeless
+                            monuments.
+                        </p>
 
-    </section>
+                        <span className="open-room">
+                            Enter India Hall →
+                        </span>
 
-</main>
-      <Footer />
-    </>
-  );
+                    </Card>
+
+                </section>
+
+            </main>
+
+            <Footer />
+        </>
+    );
 }
 
 export default MonumentPage;

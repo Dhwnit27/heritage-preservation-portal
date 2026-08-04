@@ -52,7 +52,11 @@
 
 .monument-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-10px) scale(1.02);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+    border:2px solid #c58b39;
 
     color:#8b5e3c;
 
@@ -81,3 +85,12 @@
     max-width:220px;
 
 }
+
+.monument-card:hover .open-room{
+
+    transform:translateX(8px);
+
+    color:#b8860b;
+
+}
+

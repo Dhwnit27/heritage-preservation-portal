@@ -5,39 +5,15 @@ import { Link } from "react-router-dom";
 
 function ExplorePage() {
 
-const journeys = [
-  {
-    title: "🏛 Monument Gallery",
-    description:
-      "Explore humanity's greatest architectural wonders, from ancient temples to modern marvels.",
-    button: "Enter Gallery →",
-    route: "/monuments",
-  },
-
-  {
-    title: "🎭 Culture Hall",
-    description:
-      "Discover festivals, music, clothing, food, and traditions from cultures around the world.",
-    button: "Visit Hall →",
-    route: "/culture",
-  },
-
-  {
-    title: "📜 Tradition Archive",
-    description:
-      "Experience customs and rituals that have been passed down through generations.",
-    button: "Continue Journey →",
-    route: "/traditions",
-  },
-
-  {
-    title: "📖 History Timeline",
-    description:
-      "Walk through the events and civilizations that shaped human history.",
-    button: "Begin Timeline →",
-    route: "/history",
-  },
-];
+  const journeys = [
+    {
+      title: "🏛 Heritage Hall",
+      description:
+        "Step inside the Heritage Hall and explore India's timeless monuments, rich history, and remarkable architecture.",
+      button: "Enter Heritage Hall →",
+      route: "/monuments",
+    },
+  ];
 
   return (
     <>
@@ -45,43 +21,44 @@ const journeys = [
 
       <main className="explore-page">
 
-  <section className="explore-hero">
+        <section className="explore-hero">
 
-    <h1>🌍 Choose Your Journey</h1>
+          <h1>🌍 Begin Your Journey</h1>
 
-    <p>
-      Every monument has a story.
-      Every culture has a voice.
-      Where would you like to begin?
-    </p>
+          <p>
+            Welcome to the Heritage Preservation Portal.
+            Discover India's architectural masterpieces,
+            historical landmarks, and cultural treasures
+            through an immersive virtual museum experience.
+          </p>
 
-  </section>
+        </section>
 
-  <section className="journey-section">
+        <section className="journey-section">
 
-  {journeys.map((journey, index) => (
+          {journeys.map((journey, index) => (
 
-  <article className="journey-card" key={index}>
+            <article className="journey-card" key={index}>
 
-    <div className="journey-content">
+              <div className="journey-content">
 
-      <h2>{journey.title}</h2>
+                <h2>{journey.title}</h2>
 
-      <p>{journey.description}</p>
+                <p>{journey.description}</p>
 
-      <Link to={journey.route}>
-        {journey.button}
-      </Link>
+                <Link to={journey.route}>
+                  {journey.button}
+                </Link>
 
-    </div>
+              </div>
 
-  </article>
+            </article>
 
-))}
+          ))}
 
-</section>
+        </section>
 
-</main>
+      </main>
 
       <Footer />
     </>
