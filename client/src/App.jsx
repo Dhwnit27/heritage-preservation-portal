@@ -7,6 +7,7 @@ import './App.css'
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 import ExplorePage from "./pages/ExplorePage";
 import MonumentPage from "./pages/MonumentPage";
 import IndiaPage from "./pages/IndiaPage";
@@ -25,6 +26,7 @@ function App() {
    <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/about" element={<AboutPage />} />
+  <Route path="/contact" element={<ContactPage />} />
   <Route path="/explore" element={<ExplorePage />} />
   <Route path="/monuments" element={<MonumentPage />} />
   <Route path="/india" element={<IndiaPage />} />
