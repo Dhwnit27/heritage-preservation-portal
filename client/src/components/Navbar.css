@@ -1,33 +1,129 @@
-nav {
-  background-color: #8B5E3C;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 50px;
+nav{
 
-  position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+    background:#8B5E3C;
 
-nav h2 {
-  font-size: 24px;
-}
+    color:white;
 
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 50px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
 
 }
 
-nav ul li {
-  cursor: pointer;
-   transition: color 0.3s ease;
+nav h2{
+
+    font-size:24px;
 
 }
 
-nav ul li:hover {
- color: #ffd166;
+/* Navigation */
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+.nav-links li{
+
+    cursor:pointer;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#ffd166;
+
+}
+
+/* Hamburger */
+
+.menu-btn{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+    nav{
+
+        padding:18px 25px;
+
+        flex-wrap:wrap;
+
+    }
+
+    nav h2{
+
+        font-size:1.2rem;
+
+    }
+
+    .menu-btn{
+
+        display:block;
+
+    }
+
+    .nav-links{
+
+        display:none;
+
+        width:100%;
+
+        flex-direction:column;
+
+        margin-top:20px;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+    .nav-links.active{
+
+        display:flex;
+
+    }
+
 }
