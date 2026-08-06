@@ -14,10 +14,18 @@ function Navbar() {
   {menuOpen ? "✕" : "☰"}
 </button>
       <ul className={menuOpen ? "nav-links active" : "nav-links"}>
-  <li><Link to="/">Home</Link></li>
-<li><Link to="/explore">Explore</Link></li>
-<li><Link to="/about">About</Link></li>
-<li><Link to="/contact">Contact</Link></li>
+  <Link to="/" onClick={() => setMenuOpen(false)}>
+    Home
+</Link>
+<li><Link to="/explore" onClick={() => setMenuOpen(false)}>
+    Explore
+</Link></li>
+<li><Link to="/about" onClick={() => setMenuOpen(false)}>
+    About
+</Link></li>
+<li><Link to="/contact" onClick={() => setMenuOpen(false)}>
+    Contact
+</Link></li>
 </ul>
     </nav>
   );
