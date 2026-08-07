@@ -3,171 +3,95 @@
 ========================================== */
 
 .monument-page{
-
     background:#f8f4ec;
-
     min-height:100vh;
-
     padding:70px 8%;
-
 }
 
-/* ==========================================
-   Hero Section
-========================================== */
+/* Hero */
 
 .monument-hero{
-
     max-width:900px;
-
     margin:0 auto 70px;
-
     text-align:center;
-
 }
 
 .monument-hero h1{
-
     font-size:3rem;
-
     color:#5c3924;
-
     margin-bottom:20px;
-
 }
 
 .monument-hero p{
-
     color:#6b6259;
-
     line-height:1.8;
-
     font-size:1.1rem;
-
     max-width:750px;
-
     margin:auto;
-
 }
 
-/* ==========================================
-   Hall Section
-========================================== */
+/* Hall */
 
 .hall-grid{
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
 }
 
-/* ==========================================
-   Hall Card
-========================================== */
-
 .hall-card{
-
     width:100%;
-
     max-width:470px;
-
     padding:45px 35px;
-
     text-align:center;
-
     text-decoration:none;
-
     color:#2f2f2f;
-
     background:#fffdf9;
-
     border-radius:22px;
-
     border:1px solid #e6d9c5;
-
     box-shadow:0 10px 25px rgba(0,0,0,.08);
-
     transition:.35s ease;
-
 }
 
 .hall-card h2{
-
     font-size:2rem;
-
     color:#6a3f22;
-
     margin-bottom:18px;
-
 }
 
 .hall-card p{
-
     color:#6c6c6c;
-
     line-height:1.8;
-
     margin-bottom:25px;
-
 }
 
 .hall-card:hover{
-
     transform:translateY(-10px);
-
     border-color:#c79a43;
-
     box-shadow:0 20px 40px rgba(0,0,0,.15);
-
 }
 
-/* ==========================================
-   Enter Hall
-========================================== */
-
 .open-room{
-
     display:inline-block;
-
     margin-top:8px;
-
     font-weight:600;
-
     font-size:1rem;
-
     color:#8b5e3c;
-
     transition:.3s;
-
 }
 
 .hall-card:hover .open-room{
-
     transform:translateX(8px);
-
     color:#b8860b;
-
 }
-
-/* ==========================================
-   Responsive
-========================================== */
 
 @media(max-width:768px){
 
     .monument-page{
-
         padding:40px 20px;
-
     }
 
     .monument-hero h1{
-
         font-size:2.3rem;
-
     }
 
 }

@@ -1,20 +1,23 @@
-import {useState} from "react";
+import { useState } from "react";
+import "./FeatureCard.css";
 
 function FeatureCard(props) {
   const [isFavorite, setIsFavorite] = useState(false);
+
   return (
     <div className="feature-card">
-      <img src={props.image} alt={props.title} />
+      <img
+        src={props.image}
+        alt={props.title}
+      />
 
       <h3>{props.title}</h3>
 
       <p>{props.description}</p>
 
-      <button
-  onClick={() => setIsFavorite(!isFavorite)}
->
-  {isFavorite ? "❤️ Favorited" : "🤍 Add to Favorites"}
-</button>
+      <button onClick={() => setIsFavorite(!isFavorite)}>
+        {isFavorite ? "❤️ Favorited" : "🤍 Add to Favorites"}
+      </button>
     </div>
   );
 }

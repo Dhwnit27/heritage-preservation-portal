@@ -10,59 +10,58 @@ import historyImage from "../assets/images/history.jpg";
 import FeatureCard from "./FeatureCard";
 
 function Features() {
-
   const [searchTerm, setSearchTerm] = useState("");
 
   const features = [
     {
       image: monumentImage,
       title: "🏛️ Monuments",
-      description: "Discover famous historical monuments around the world."
+      description: "Discover famous historical monuments around the world.",
     },
     {
       image: cultureImage,
       title: "🎭 Culture",
-      description: "Explore traditions, festivals, and cultural heritage."
+      description: "Explore traditions, festivals, and cultural heritage.",
     },
     {
       image: traditionsImage,
       title: "📜 Traditions",
-      description: "Learn about customs passed down through generations."
+      description: "Learn about customs passed down through generations.",
     },
     {
       image: historyImage,
       title: "📖 History",
-      description: "Understand important historical events and stories."
-    }
+      description: "Understand important historical events and stories.",
+    },
   ];
 
   const filteredFeatures = features.filter((feature) =>
-  feature.title.toLowerCase().includes(searchTerm.toLowerCase())
-);
+    feature.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <section id="features" className="features">
       <h2>Our Heritage Features</h2>
 
       <div className="search-container">
-  <input
-    type="text"
-    placeholder=" Search catagories..."
-    value={searchTerm}
-    onChange={(e) => setSearchTerm(e.target.value)}
-  />
-</div>
+        <input
+          type="text"
+          placeholder="Search categories..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
 
-     <div className="features-container">
-  {filteredFeatures.map((feature, index) => (
-    <FeatureCard
-      key={index}
-      image={feature.image}
-      title={feature.title}
-      description={feature.description}
-    />
-  ))}
-</div>
+      <div className="features-container">
+        {filteredFeatures.map((feature, index) => (
+          <FeatureCard
+            key={index}
+            image={feature.image}
+            title={feature.title}
+            description={feature.description}
+          />
+        ))}
+      </div>
     </section>
   );
 }

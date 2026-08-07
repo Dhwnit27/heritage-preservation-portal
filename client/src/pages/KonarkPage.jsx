@@ -20,7 +20,7 @@ function KonarkPage() {
           ← Back to India
         </Link>
 
-        {/* Hero Section */}
+        {/* Hero */}
         <section className="monument-hero">
 
           <h1 className="monument-title">
@@ -47,6 +47,7 @@ function KonarkPage() {
         </section>
 
         {/* Story */}
+
         <section className="monument-section">
 
           <h2>☀️ The Legend</h2>
@@ -55,13 +56,15 @@ function KonarkPage() {
             Built around 1250 CE by King Narasimhadeva I of the Eastern
             Ganga Dynasty, the Konark Sun Temple was designed as a gigantic
             stone chariot carrying the Sun God across the sky. The temple
-            features twelve beautifully carved wheels and seven stone horses,
-            symbolizing the passage of time and the movement of the sun.
+            features twelve beautifully carved wheels and seven stone
+            horses, symbolizing the passage of time and the movement
+            of the sun.
           </p>
 
         </section>
 
-        {/* Quick Facts */}
+        {/* Facts */}
+
         <section className="monument-section">
 
           <h2>📋 Quick Facts</h2>
@@ -93,6 +96,7 @@ function KonarkPage() {
         </section>
 
         {/* Gallery */}
+
         <section className="monument-section">
 
           <h2>🖼 Gallery</h2>
@@ -119,19 +123,22 @@ function KonarkPage() {
         </section>
 
         {/* Fun Fact */}
+
         <section className="monument-section">
 
           <h2>💡 Did You Know?</h2>
 
           <p>
-            The famous stone wheels of the Konark Sun Temple are so precisely
-            carved that they can function as ancient sundials, allowing people
-            to estimate the time using the shadow of the sun.
+            The famous stone wheels of the Konark Sun Temple are so
+            precisely carved that they can function as ancient sundials,
+            allowing people to estimate the time using the shadow of
+            the sun.
           </p>
 
         </section>
 
         {/* Visit */}
+
         <section className="monument-section">
 
           <h2>🧳 Plan Your Visit</h2>
@@ -158,6 +165,7 @@ function KonarkPage() {
         </section>
 
         {/* Navigation */}
+
         <section className="monument-navigation">
 
           <Link to="/red-fort" className="nav-btn">

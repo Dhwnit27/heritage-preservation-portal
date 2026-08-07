@@ -19,12 +19,9 @@ function TajMahalPage() {
           ← Back to India
         </Link>
 
-        {/* Hero Section */}
+        {/* Hero */}
         <section className="monument-hero">
-
-          <h1 className="monument-title">
-            🏛 Taj Mahal
-          </h1>
+          <h1 className="monument-title">🏛 Taj Mahal</h1>
 
           <img
             src={tajMahal}
@@ -41,25 +38,22 @@ function TajMahalPage() {
             examples of Mughal architecture ever built. It was constructed
             by Emperor Shah Jahan as a symbol of eternal love.
           </p>
-
         </section>
 
         {/* Story */}
         <section className="monument-section">
-
           <h2>The Story</h2>
 
           <p>
             The Taj Mahal was commissioned by Mughal Emperor Shah Jahan
-            in memory of his beloved wife Mumtaz Mahal. Construction began
-            in 1632 and took over twenty years to complete. Today it is one
-            of the world's most admired architectural masterpieces and a
-            UNESCO World Heritage Site.
+            in memory of his beloved wife Mumtaz Mahal. Construction
+            began in 1632 and took over twenty years to complete.
+            Today it is one of the world's most admired architectural
+            masterpieces and a UNESCO World Heritage Site.
           </p>
-
         </section>
 
-        {/* Quick Facts */}
+        {/* Facts */}
         <section className="monument-section">
 
           <h2>📋 Quick Facts</h2>
@@ -91,6 +85,7 @@ function TajMahalPage() {
         </section>
 
         {/* Gallery */}
+
         <section className="monument-section">
 
           <h2>🖼 Photo Gallery</h2>
@@ -112,6 +107,7 @@ function TajMahalPage() {
         </section>
 
         {/* Fun Fact */}
+
         <section className="monument-section">
 
           <h2>💡 Did You Know?</h2>
@@ -124,7 +120,8 @@ function TajMahalPage() {
 
         </section>
 
-        {/* Visit Information */}
+        {/* Visit */}
+
         <section className="monument-section">
 
           <h2>🧳 Plan Your Visit</h2>
@@ -151,10 +148,11 @@ function TajMahalPage() {
         </section>
 
         {/* Navigation */}
+
         <section className="monument-navigation">
 
-          <Link to="#" className="nav-btn">
-            ⬅ Previous
+          <Link to="/india" className="nav-btn">
+            ⬅ India Hall
           </Link>
 
           <Link to="/red-fort" className="nav-btn">

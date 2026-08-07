@@ -1,21 +1,19 @@
-/* .india-page {
-    /* Page-specific styles only 
-} */
+.india-page{
+    text-align:center;
+}
+
+.india-page h1{
+    margin-bottom:20px;
+    color:#4d2e1f;
+}
 
 .india-subtitle{
-
     text-align:center;
-
     color:#666;
-
     font-size:1.1rem;
-
     line-height:1.8;
-
     max-width:850px;
-
     margin:0 auto 60px;
-
 }
 
 .monument-grid{
@@ -25,72 +23,40 @@
 }
 
 .monument-card{
-
     padding:35px 25px;
-
     text-align:center;
-
     text-decoration:none;
-
     color:#222;
-
     border-radius:18px;
-
     min-height:220px;
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:center;
-
-    transition:.35s;
-
 }
 
 .monument-card:hover{
-
     transform:translateY(-10px) scale(1.02);
-
     box-shadow:0 18px 35px rgba(0,0,0,.18);
-
     border:2px solid #c58b39;
-
     color:#8b5e3c;
-
 }
 
 .monument-card h2{
-
     margin-bottom:12px;
-
     font-size:1.6rem;
-
     color:#4d2e1f;
-
 }
 
 .monument-card p{
-
     margin:0;
-
     color:#777;
-
     font-size:1rem;
-
     line-height:1.6;
-
     max-width:220px;
-
 }
 
 .monument-card:hover .open-room{
-
     transform:translateX(8px);
-
     color:#b8860b;
-
 }
-

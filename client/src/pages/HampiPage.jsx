@@ -161,9 +161,9 @@ function HampiPage() {
             ⬅ Konark
           </Link>
 
-          <Link to="#" className="nav-btn">
-            More Coming Soon ➡
-          </Link>
+         <Link to="/india">
+    Back to India ➡
+</Link>
 
         </section>
 
