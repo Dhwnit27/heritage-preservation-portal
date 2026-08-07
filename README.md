@@ -46,21 +46,6 @@ This project demonstrates modern frontend development practices using React, com
 
 ---
 
-## 📸 Screenshots
-
-> *(Add screenshots of your project here)*
-
-Example:
-
-```
-screenshots/
-│
-├── home.png
-├── about.png
-├── monuments.png
-└── contact.png
-```
-
 ---
 
 ## 🛠️ Tech Stack
